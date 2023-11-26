@@ -11,9 +11,13 @@ import vid2 from "../vid2.mp4";
 import close from "../close.png";
 import contact from "../contact.png";
 import closeb from "../closeb.png";
+import $ from "jquery";
 const Home = () => {
   // const [slide,setslide] = useState(1);
   var slide = 1;
+  $(window).on('load', function() {
+    document.getElementById("loader").style.transform="translate(0,-100vh)"
+  })
   function gtclick(e) {
     e.preventDefault();
     document.getElementById("slide" + slide).style.display = "none";
@@ -36,6 +40,10 @@ const Home = () => {
   }
   return (
     <>
+    <div id="loader" className=" fixed transition-all ease-in duration-500 z-50 h-screen w-full  text-white bg-black flex flex-col justify-center items-center">
+      <div className="self-center text-2xl  text-center animate-[load_1s_ease-in-out_infinite] transition-transform ">mp.</div>
+      <div className="font-sans text-3xl tracking-[1rem]  mt-5 text-center">Loading</div>
+    </div>
       <div
         id="nav"
         style={{ backgroundColor: "#cc3" }}
