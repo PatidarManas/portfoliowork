@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import lt from "../lt.png";
 import gt from "../gt.png";
 import bw1 from "../bw1.png";
@@ -11,13 +11,19 @@ import vid2 from "../vid2.mp4";
 import close from "../close.png";
 import contact from "../contact.png";
 import closeb from "../closeb.png";
-import $ from "jquery";
 const Home = () => {
-  // const [slide,setslide] = useState(1);
   var slide = 1;
-  $(window).on('load', function() {
+  
+  
+  function loadint(){
     document.getElementById("loader").style.transform="translate(0,-100vh)"
-  })
+
+  }
+  useEffect(() => {
+    setTimeout(function(){loadint()},3000);
+  }, [])
+  
+
   function gtclick(e) {
     e.preventDefault();
     document.getElementById("slide" + slide).style.display = "none";
