@@ -1,28 +1,35 @@
 import React, { useEffect } from "react";
 import lt from "../lt.png";
 import gt from "../gt.png";
-import bw1 from "../bw1.png";
-import bw2 from "../bw2.png";
-import bw3 from "../bw3.png";
-import bw4 from "../bw4.png";
+import bw1 from "../bw1.jpg";
+import bw2 from "../bw2.jpg";
+import bw3 from "../bw3.jpg";
+import bw4 from "../bw4.jpg";
 import me from "../me.png";
 import vid1 from "../vid1.mp4";
 import vid2 from "../vid2.mp4";
+import vid3 from "../vid3.mp4";
+import vid4 from "../vid4.mp4";
+import org1 from "../org1.mp4";
+import org2 from "../org2.mp4";
+import org4 from "../org4.mp4";
+import edt1 from "../edt1.mp4";
+import edt2 from "../edt2.mp4";
+import edt4 from "../edt4.mp4";
 import close from "../close.png";
-import contact from "../contact.png";
+import contact from "../contact.jpg";
 import closeb from "../closeb.png";
 const Home = () => {
   var slide = 1;
-  
-  
-  function loadint(){
-    document.getElementById("loader").style.transform="translate(0,-100vh)"
 
+  function loadint() {
+    document.getElementById("loader").style.transform = "translate(0,-100vh)";
   }
   useEffect(() => {
-    setTimeout(function(){loadint()},3000);
-  }, [])
-  
+    setTimeout(function () {
+      loadint();
+    }, 3000);
+  }, []);
 
   function gtclick(e) {
     e.preventDefault();
@@ -46,17 +53,27 @@ const Home = () => {
   }
   return (
     <>
-    <div id="loader" className=" fixed transition-all ease-in duration-500 z-50 h-screen w-full  text-white bg-black flex flex-col justify-center items-center">
-      <div className="self-center text-2xl  text-center animate-[load_1s_ease-in-out_infinite] transition-transform ">mp.</div>
-      <div className="font-sans text-3xl tracking-[1rem]  mt-5 text-center">Loading</div>
-    </div>
+      <div
+        id="loader"
+        className=" fixed transition-all ease-in duration-500 z-50 h-screen w-full  text-white bg-black flex flex-col justify-center items-center"
+      >
+        <div className="self-center text-2xl  text-center animate-[load_1s_ease-in-out_infinite] transition-transform ">
+          mp.
+        </div>
+        <div className="font-sans text-3xl tracking-[1rem]  mt-5 text-center">
+          Loading
+        </div>
+      </div>
       <div
         id="nav"
         style={{ backgroundColor: "#cc3" }}
         className="-translate-y-full  fixed transition-all ease-in duration-500 z-50 h-screen w-full  text-black "
       >
         <div className=" px-10 lg:px-40 py-10 flex justify-between">
-          <a href="/" className="text-xl font-mono cursor-pointer flex  gap-1 hover:gap-7">
+          <a
+            href="/"
+            className="text-xl font-mono cursor-pointer flex  gap-1 hover:gap-7"
+          >
             <div>m</div>
             <div>p</div>
             <div>.</div>
@@ -132,7 +149,10 @@ const Home = () => {
       </div>
       <div id="home" className="hidden md:block min-h-[calc(100vh+4rem)]">
         <div className=" text-white px-10 lg:px-40 py-10 flex justify-between">
-          <a href="/" className="text-xl font-mono cursor-pointer flex  gap-1 hover:gap-7">
+          <a
+            href="/"
+            className="text-xl font-mono cursor-pointer flex  gap-1 hover:gap-7"
+          >
             <div>m</div>
             <div>p</div>
             <div>.</div>
@@ -174,7 +194,10 @@ const Home = () => {
               click
             </button>
           </div>
-          <div id="slide1" className="flex text-white w-full px-5 lg:px-24 gap-5">
+          <div
+            id="slide1"
+            className="flex text-white w-full px-5 lg:px-24 gap-5"
+          >
             <div className="self-center w-5/12 lg:w-1/2">
               <h1
                 style={{ fontFamily: "Open Sans" }}
@@ -193,7 +216,10 @@ const Home = () => {
               <img alt="" src={bw1} className="h-fit lg:h-72 self-center"></img>
             </div>
           </div>
-          <div id="slide2" className="hidden text-white w-full px-5 lg:px-24 gap-5">
+          <div
+            id="slide2"
+            className="hidden text-white w-full px-5 lg:px-24 gap-5"
+          >
             <div className="self-center w-5/12 lg:w-1/2">
               <h1
                 style={{ fontFamily: "Open Sans" }}
@@ -212,7 +238,10 @@ const Home = () => {
               <img alt="" src={bw2} className="lg:h-72 self-center"></img>
             </div>
           </div>
-          <div id="slide3" className="hidden text-white w-full px-5 lg:px-24 gap-5">
+          <div
+            id="slide3"
+            className="hidden text-white w-full px-5 lg:px-24 gap-5"
+          >
             <div className="self-center w-5/12 lg:w-1/2">
               <h1
                 style={{ fontFamily: "Open Sans" }}
@@ -229,10 +258,13 @@ const Home = () => {
               </h2>
             </div>
             <div className="flex">
-              <img  alt="" src={bw3} className="h-max lg:h-72 self-center"></img>
+              <img alt="" src={bw3} className="h-max lg:h-72 self-center"></img>
             </div>
           </div>
-          <div id="slide4" className="hidden text-white w-full px-5 lg:px-24 gap-5">
+          <div
+            id="slide4"
+            className="hidden text-white w-full px-5 lg:px-24 gap-5"
+          >
             <div className="self-center w-5/12 lg:w-1/2">
               <h1
                 style={{ fontFamily: "Open Sans" }}
@@ -281,7 +313,10 @@ const Home = () => {
       </div>
       <div id="homesm" className="block md:hidden min-h-[calc(100vh+4rem)]">
         <div className="text-white px-10 lg:px-40 py-5 flex justify-between">
-          <a href="/" className="text-xl font-mono cursor-pointer flex  gap-1 hover:gap-7">
+          <a
+            href="/"
+            className="text-xl font-mono cursor-pointer flex  gap-1 hover:gap-7"
+          >
             <div>m</div>
             <div>p</div>
             <div>.</div>
@@ -298,13 +333,23 @@ const Home = () => {
           </button>
         </div>
         <div className="text-white flex flex-col">
-        <img  alt="" src={bw2} className="w-4/5 self-center mb-4"></img>
-          <p style={{fontFamily:"Montserrat"}} className="mx-7 text-justify font-sans text-lg ">
-In the world of visual storytelling, a raw video is mere footage, while a professionally edited one becomes a captivating narrative. It mirrors your identity, with animation serving as a silent language. The synergy of matching background music adds enchantment, transforming the video into pure magic. In a rapidly changing world, meticulous editing becomes the anchor, holding attention and ensuring your story resonates seamlessly.</p>
+          <img alt="" src={bw2} className="w-4/5 self-center mb-4"></img>
+          <p
+            style={{ fontFamily: "Montserrat" }}
+            className="mx-7 text-justify font-sans text-lg "
+          >
+            In the world of visual storytelling, a raw video is mere footage,
+            while a professionally edited one becomes a captivating narrative.
+            It mirrors your identity, with animation serving as a silent
+            language. The synergy of matching background music adds enchantment,
+            transforming the video into pure magic. In a rapidly changing world,
+            meticulous editing becomes the anchor, holding attention and
+            ensuring your story resonates seamlessly.
+          </p>
         </div>
       </div>
-      
-       <div id="about" className="w-full min-h-[calc(100vh+4rem)] bg-white ">
+
+      <div id="about" className="w-full min-h-[calc(100vh+4rem)] bg-white ">
         <div className="px-5 lg:px-32 py-10 flex flex-col">
           <h1
             style={{ fontFamily: "Open Sans" }}
@@ -314,7 +359,8 @@ In the world of visual storytelling, a raw video is mere footage, while a profes
           </h1>
           <div className="w-10 md:w-14 h-1 bg-blue-600 "></div>
           <div className="flex flex-col md:flex-row gap-3 md:gap-10 mt-5 md:mt-20 justify-between">
-            <img alt=""
+            <img
+              alt=""
               src={me}
               className="w-10/12 self-center md:w-6/12 lg:5/12 rounded-full border-2 pt-8 border-blue-400 bg-slate-800 hover:bg-slate-600 hover:scale-110 hover:border-blue-900 transition duration-500 cursor-pointer"
             ></img>
@@ -397,7 +443,7 @@ In the world of visual storytelling, a raw video is mere footage, while a profes
               className="w-1/2 md:w-1/4 border border-white py-3 px-2 flex flex-col align-middle items-center justify-center"
             >
               <video className="w-60" autoPlay loop muted>
-                <source src={vid1} type="video/mp4" />
+                <source src={vid3} type="video/mp4" />
               </video>
               <h1 className="text-base md:text-2xl font-mono font-semibold mt-1 ">
                 Captions
@@ -416,7 +462,7 @@ In the world of visual storytelling, a raw video is mere footage, while a profes
               className="w-1/2 md:w-1/4 border border-white py-3 px-2 flex flex-col align-middle items-center justify-center"
             >
               <video className="w-60" autoPlay loop muted>
-                <source src={vid2} type="video/mp4" />
+                <source src={vid4} type="video/mp4" />
               </video>
               <h1 className="text-base md:text-2xl font-mono font-semibold mt-1 ">
                 Engaging Reels
@@ -431,40 +477,184 @@ In the world of visual storytelling, a raw video is mere footage, while a profes
           </div>
         </div>
       </div>
-       <div
+      <div
         id="vid1full"
-        className="hidden fixed top-0 bg-black text-white h-screen w-full p-7 md:p-16  justify-center"
+        className="hidden flex-col md:flex-row md:justify-around fixed top-0 bg-black text-white h-screen w-full p-7 gap-7"
       >
         <button
           onClick={() => {
             document.getElementById("vid1full").style.display = "none";
-            document.getElementById("vid1").pause();
+            document.getElementById("vid1org").pause();
+            document.getElementById("vid1edt").pause();
           }}
-          className="fixed top-5 right-5 md:top-10 md:right-36 hover:opacity-70"
+          className="fixed top-2 right-2 md:top-10 md:right-36 hover:opacity-70"
         >
           <img alt="" src={close} className="w-7 md:w-10 "></img>
         </button>
-        <video id="vid1" className=" opacity-100" controls>
-          <source src={vid1} type="video/mp4" />
-        </video>
+        <div className="md:h-full flex flex-col">
+          <button id="vid1beforebtn"
+            onClick={() => {
+              document.getElementById("vid1org").style.display="block";
+              document.getElementById("vid1beforebtn").style.display="none";
+              document.getElementById("vid1afterbtn").style.display="block";
+              document.getElementById("vid1edt").style.display="none";
+              document.getElementById("vid1edt").pause();
+              document.getElementById("vid1org").pause();
+            }}
+            className="bg-transparent  text-blue-700 font-semibold md:text-white border border-blue-500 hover:border-transparent rounded  w-24 h-10 md:text-4xl md:border-0   md:bg-transparent md:font-mono self-center text-center md:hover:tracking-[1rem] cursor-pointer"
+            disabled={window.innerWidth >= 768 ? true : false}
+          >
+            Before
+          </button>
+          <video
+            id="vid1org"
+            className="hidden md:block h-full opacity-100"
+            controls
+          >
+            <source src={org1} type="video/mp4" />
+          </video>
+        </div>
+        <div  className="md:h-full flex flex-col">
+          <button id="vid1afterbtn"
+            onClick={() => {
+              document.getElementById("vid1org").style.display="none";
+              document.getElementById("vid1beforebtn").style.display="block";
+              document.getElementById("vid1afterbtn").style.display="none";
+              document.getElementById("vid1edt").style.display="block";
+              document.getElementById("vid1edt").pause();
+              document.getElementById("vid1org").pause();
+            }} className=" w-24 h-10 bg-blue-700  text-white font-semibold hover:text-white  border-blue-500 hover:border-transparent rounded md:text-4xl   md:font-mono border-2 md:border-0  md:bg-transparent self-center text-center md:hover:tracking-[1rem] cursor-pointer"
+            disabled={window.innerWidth >= 768 ? true : false} >
+            After
+          </button>
+          <video
+            id="vid1edt"
+            className="hidden md:block h-full opacity-100"
+            controls
+          >
+            <source src={edt1} type="video/mp4" />
+          </video>
+        </div>
       </div>
       <div
         id="vid2full"
-        className="hidden fixed top-0 bg-black text-white h-screen w-full p-7 md:p-16    justify-center"
+        className="hidden flex-col md:flex-row md:justify-around fixed top-0 bg-black text-white h-screen w-full p-7 gap-7"
       >
         <button
           onClick={() => {
             document.getElementById("vid2full").style.display = "none";
-            document.getElementById("vid2").pause();
+            document.getElementById("vid2org").pause();
+            document.getElementById("vid2edt").pause();
           }}
-          className="fixed top-5 right-5 md:top-10 md:right-36 hover:opacity-70"
+          className="fixed top-2 right-2 md:top-10 md:right-36 hover:opacity-70"
         >
-          <img alt=""  src={close} className="w-7 md:w-10  "></img>
+          <img alt="" src={close} className="w-7 md:w-10 "></img>
         </button>
-        <video id="vid2" className=" opacity-100" controls>
-          <source src={vid2} type="video/mp4" />
-        </video>
+        <div className="md:h-full flex flex-col">
+          <button id="vid2beforebtn"
+            onClick={() => {
+              document.getElementById("vid2org").style.display="block";
+              document.getElementById("vid2beforebtn").style.display="none";
+              document.getElementById("vid2afterbtn").style.display="block";
+              document.getElementById("vid2edt").style.display="none";
+              document.getElementById("vid2edt").pause();
+              document.getElementById("vid2org").pause();
+            }}
+            className="bg-transparent  text-blue-700 font-semibold md:text-white border border-blue-500 hover:border-transparent rounded  w-24 h-10 md:text-4xl md:border-0   md:bg-transparent md:font-mono self-center text-center md:hover:tracking-[1rem] cursor-pointer"
+            disabled={window.innerWidth >= 768 ? true : false}
+          >
+            Before
+          </button>
+          <video
+            id="vid2org"
+            className="hidden md:block h-full opacity-100"
+            controls
+          >
+            <source src={org2} type="video/mp4" />
+          </video>
+        </div>
+        <div  className="md:h-full flex flex-col">
+          <button id="vid2afterbtn"
+            onClick={() => {
+              document.getElementById("vid2org").style.display="none";
+              document.getElementById("vid2beforebtn").style.display="block";
+              document.getElementById("vid2afterbtn").style.display="none";
+              document.getElementById("vid2edt").style.display="block";
+              document.getElementById("vid2edt").pause();
+              document.getElementById("vid2org").pause();
+            }} className=" w-24 h-10 bg-blue-700  text-white font-semibold hover:text-white  border-blue-500 hover:border-transparent rounded md:text-4xl   md:font-mono border-2 md:border-0  md:bg-transparent self-center text-center md:hover:tracking-[1rem] cursor-pointer"
+            disabled={window.innerWidth >= 768 ? true : false} >
+            After
+          </button>
+          <video
+            id="vid2edt"
+            className="hidden md:block h-full opacity-100"
+            controls
+          >
+            <source src={edt2} type="video/mp4" />
+          </video>
+        </div>
       </div>
+      <div
+        id="vid4full"
+        className="hidden flex-col md:flex-row md:justify-around fixed top-0 bg-black text-white h-screen w-full p-7 gap-7"
+      >
+        <button
+          onClick={() => {
+            document.getElementById("vid4full").style.display = "none";
+            document.getElementById("vid4org").pause();
+            document.getElementById("vid4edt").pause();
+          }}
+          className="fixed top-2 right-2 md:top-10 md:right-36 hover:opacity-70"
+        >
+          <img alt="" src={close} className="w-7 md:w-10 "></img>
+        </button>
+        <div className="md:h-full flex flex-col">
+          <button id="vid4beforebtn"
+            onClick={() => {
+              document.getElementById("vid4org").style.display="block";
+              document.getElementById("vid4beforebtn").style.display="none";
+              document.getElementById("vid4afterbtn").style.display="block";
+              document.getElementById("vid4edt").style.display="none";
+              document.getElementById("vid4edt").pause();
+              document.getElementById("vid4org").pause();
+            }}
+            className="bg-transparent  text-blue-700 font-semibold md:text-white border border-blue-500 hover:border-transparent rounded  w-24 h-10 md:text-4xl md:border-0   md:bg-transparent md:font-mono self-center text-center md:hover:tracking-[1rem] cursor-pointer"
+            disabled={window.innerWidth >= 768 ? true : false}
+          >
+            Before
+          </button>
+          <video
+            id="vid4org"
+            className="hidden md:block h-full opacity-100"
+            controls
+          >
+            <source src={org4} type="video/mp4" />
+          </video>
+        </div>
+        <div  className="md:h-full flex flex-col">
+          <button id="vid4afterbtn"
+            onClick={() => {
+              document.getElementById("vid4org").style.display="none";
+              document.getElementById("vid4beforebtn").style.display="block";
+              document.getElementById("vid4afterbtn").style.display="none";
+              document.getElementById("vid4edt").style.display="block";
+              document.getElementById("vid4edt").pause();
+              document.getElementById("vid4org").pause();
+            }} className=" w-24 h-10 bg-blue-700  text-white font-semibold hover:text-white  border-blue-500 hover:border-transparent rounded md:text-4xl   md:font-mono border-2 md:border-0  md:bg-transparent self-center text-center md:hover:tracking-[1rem] cursor-pointer"
+            disabled={window.innerWidth >= 768 ? true : false} >
+            After
+          </button>
+          <video
+            id="vid4edt"
+            className="hidden md:block h-full opacity-100"
+            controls
+          >
+            <source src={edt4} type="video/mp4" />
+          </video>
+        </div>
+      </div>
+      
       <div
         id="vid3full"
         className="hidden fixed top-0 bg-black text-white h-screen w-full p-7 md:p-16    justify-center"
@@ -479,24 +669,7 @@ In the world of visual storytelling, a raw video is mere footage, while a profes
           <img alt="" src={close} className="w-7 md:w-10  "></img>
         </button>
         <video id="vid3" className=" opacity-100" controls>
-          <source src={vid1} type="video/mp4" />
-        </video>
-      </div>
-      <div
-        id="vid4full"
-        className="hidden fixed top-0 bg-black text-white h-screen w-full p-7 md:p-16    justify-center"
-      >
-        <button
-          onClick={() => {
-            document.getElementById("vid4full").style.display = "none";
-            document.getElementById("vid4").pause();
-          }}
-          className="fixed top-5 right-5 md:top-10 md:right-36 hover:opacity-70"
-        >
-          <img alt="" src={close} className="w-7 md:w-10  "></img>
-        </button>
-        <video id="vid4" className=" opacity-100" controls>
-          <source src={vid1} type="video/mp4" />
+          <source src={vid3} type="video/mp4" />
         </video>
       </div>
       <div id="contact" className="w-full min-h-screen bg-white">
@@ -509,7 +682,11 @@ In the world of visual storytelling, a raw video is mere footage, while a profes
           </h1>
           <div className="w-8 md:w-12 ml-0 h-1 bg-blue-600 "></div>
           <div className="flex flex-col md:flex-row gap-5 h-full items-center	justify-between">
-            <img alt="" src={contact} className="md:w-1/2 flex self-center my-3 md:my-20"></img>
+            <img
+              alt=""
+              src={contact}
+              className="md:w-1/2 flex self-center my-3 md:my-20"
+            ></img>
             <div className="flex flex-col gap-5 w-11/12 md:w-5/12">
               <h1 className="font-sans text-3xl font-medium text-center">
                 Let's Connect Now
@@ -524,14 +701,14 @@ In the world of visual storytelling, a raw video is mere footage, while a profes
                   will try to provide a free demo
                 </span>
               </p>
-              <a 
+              <a
                 href="mailto:manaspatidar170@gmail.com"
                 style={{ fontFamily: "Lato" }}
                 className="text-xl font-semibold hover:tracking-widest cursor-pointer"
               >
                 manaspatidar170@gmail.com
               </a>
-              <a 
+              <a
                 href="https://manaspatidar.netlify.app/"
                 style={{ fontFamily: "Lato" }}
                 className="text-xl font-semibold hover:tracking-widest text-blue-700 cursor-pointer"
@@ -541,7 +718,7 @@ In the world of visual storytelling, a raw video is mere footage, while a profes
             </div>
           </div>
         </div>
-      </div> 
+      </div>
     </>
   );
 };
