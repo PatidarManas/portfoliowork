@@ -465,13 +465,13 @@ const Home = () => {
                 <source src={vid4} type="video/mp4" />
               </video>
               <h1 className="text-base md:text-2xl font-mono font-semibold mt-1 ">
-                Engaging Reels
+                Hook Start
               </h1>
               <h1
                 style={{ fontFamily: "Montserrat" }}
                 className="hidden md:block text-gray-600 mt-2 text-justify font-semibold  tracking-wider"
               >
-                Make your reels more engaging with fast pace edits
+                Capitalize watch time with hook start and ending.
               </h1>
             </button>
           </div>
